@@ -5,48 +5,46 @@ console.log(
 let answer = prompt("What is your name");
 console.log("Hello, " + answer);
 
-
 // Exercise 2
-let favoriteNumber = 17
+let favoriteNumber = 17;
 
-let guessedNumber = prompt("guessed number")
+let guessedNumber = prompt("guessed number");
 
-
-if(favoriteNumber > guessedNumber){
-    console.log("too low");
-} else if(guessedNumber > favoriteNumber){
+if (favoriteNumber > guessedNumber) {
+  console.log("too low");
+} else if (guessedNumber > favoriteNumber) {
   console.log("too high");
-} else if(favoriteNumber = guessedNumber){
+} else if ((favoriteNumber = guessedNumber)) {
   console.log("Congratulations!!!");
 }
 
 // Exercise 2
 let birthMonth = prompt("What is your birth month");
 
-switch(birthMonth){
+switch (birthMonth) {
   case "December":
   case "January":
   case "February":
-   console.log(birthMonth + " " + "Winter");
-   break;
+    console.log(birthMonth + " " + "Winter");
+    break;
   case "March":
   case "April":
   case "May":
-   console.log(birthMonth + " " + "Spring");
-   break;
+    console.log(birthMonth + " " + "Spring");
+    break;
   case "June":
   case "July":
   case "August":
-   console.log(birthMonth + " " + "Summer");
-   break;
+    console.log(birthMonth + " " + "Summer");
+    break;
   case "September":
   case "October":
   case "November":
-   console.log("Fall");
-   break;
+    console.log("Fall");
+    break;
   default:
-    console.log(birthMonth + " " + "Do not valid Month");   
-  }
+    console.log(birthMonth + " " + "Do not valid Month");
+}
 
 // Exercise 2
 
@@ -58,40 +56,55 @@ let type = "";
 let color = "";
 let size = "";
 
-if (sizeId == "S") {
-  size = "Small";
-} else if (sizeId == "M") {
-  size = "Medium";
-} else if (sizeId == "L") {
-  size = "Large";
-} else if (sizeId == "XL") {
-  size = "Extra Large";
-} else {
-  size = "One Size Fits All";
+switch (sizeId) {
+  case "S":
+    size = "Small";
+    break;
+  case "M":
+    size = "Medium";
+    break;
+  case "L":
+    size = "Large";
+    break;
+  case "XL":
+    size = "Extra Large";
+    break;
+  default:
+    size = "One Size Fits All";
 }
 
-if (colorId == "BL") {
-  color = "Black";
-} else if (colorId == "BL") {
-  color = "Blue";
-} else if (colorId == "RD") {
-  color = "Red";
-} else if (colorId == "PU") {
-  color = "Purple";
-} else {
-  color = "White";
+switch (colorId) {
+  case "BL":
+    color = "Black";
+    break;
+  case "BU":
+    color = "Blue";
+    break;
+  case "RD":
+    color = "Red";
+    break;
+  case "PU":
+    color = "Purple";
+    break;
+  default:
+    color = "White";
 }
 
-if (typeId == "01") {
-  type = "Tank top";
-} else if (typeId == "02") {
-  type = "T-Shirt";
-} else if (typeId == "03") {
-  type = "Long Sleeve";
-} else if (typeId == "04") {
-  type == "Sweat Shirt";
-} else {
-  type = "Other";
+switch (typeId) {
+  case "01":
+    type = "Tank top";
+    break;
+  case "02":
+    type = "T-Shirt";
+    break;
+  case "03":
+    type = "Long Sleeve";
+    break;
+  case "04":
+    type == "Sweat Shirt";
+    break;
+  default:
+    type = "Other";
 }
 
 console.log(`product: ${size} ${color} ${type}`);
